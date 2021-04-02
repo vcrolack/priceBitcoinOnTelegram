@@ -18,16 +18,13 @@ def bot_send_text(bot_message):
     return response
 
 def report():
-    btc_price = f'The price of Bitcoin today is {btc.btc_scraping()}'
-    dot_price = f'The price of Polkadot today is {dot.dot_scraping()}'
-    eth_price = f'The price of Ethereum today is {eth.eth_scraping()}'
-    link_price = f'The price of Chainlink today is {link.link_scraping()}'
-    doge_price = f'The price of Doge Coin today is {doge.doge_scraping()}'
-    bot_send_text(btc_price)
-    bot_send_text(dot_price)
-    bot_send_text(eth_price)
-    bot_send_text(link_price)
-    bot_send_text(doge_price)
+    btc_price = f'{btc.btc_scraping()}'
+    dot_price = f'{dot.dot_scraping()}'
+    eth_price = f'{eth.eth_scraping()}'
+    link_price = f'{link.link_scraping()}'
+    doge_price = f'{doge.doge_scraping()}'
+    report_done = f'Greetings, user!\nThe price of the following cryptocurrencies are:BTC: {btc_price}\nDOT: {dot_price}\nETH: {eth_price}\nLINK: {link_price}\nDOGE: {doge_price}'
+    bot_send_text(report_done)
 
 
 if __name__ == '__main__':
