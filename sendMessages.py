@@ -5,6 +5,7 @@ import coins.bitcoin as btc
 import coins.polkadot as dot
 import coins.ethereum as eth
 import coins.chainlink as link
+import coins.doge_coin as doge
 
 def bot_send_text(bot_message):
     
@@ -21,10 +22,12 @@ def report():
     dot_price = f'The price of Polkadot today is {dot.dot_scraping()}'
     eth_price = f'The price of Ethereum today is {eth.eth_scraping()}'
     link_price = f'The price of Chainlink today is {link.link_scraping()}'
+    doge_price = f'The price of Doge Coin today is {doge.doge_scraping()}'
     bot_send_text(btc_price)
     bot_send_text(dot_price)
     bot_send_text(eth_price)
     bot_send_text(link_price)
+    bot_send_text(doge_price)
 
 
 if __name__ == '__main__':
