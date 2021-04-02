@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import schedule
+import './coins/bitcoin'
 
 def bot_send_text(bot_message):
     
