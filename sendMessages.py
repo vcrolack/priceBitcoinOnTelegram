@@ -23,7 +23,7 @@ def report():
     eth_price = f'{eth.eth_scraping()}'
     link_price = f'{link.link_scraping()}'
     doge_price = f'{doge.doge_scraping()}'
-    report_done = f'Greetings, user!\nThe price of the following cryptocurrencies are:BTC: {btc_price}\nDOT: {dot_price}\nETH: {eth_price}\nLINK: {link_price}\nDOGE: {doge_price}'
+    report_done = f'Greetings, user!\nThe price of the following cryptocurrencies are:\nBTC: {btc_price}\nDOT: {dot_price}\nETH: {eth_price}\nLINK: {link_price}\nDOGE: {doge_price}'
     bot_send_text(report_done)
 
 
