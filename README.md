@@ -4,3 +4,4 @@ You need install:
     bs4
     requests
     schedule
+V 0.1
